@@ -17,7 +17,7 @@ This is a Custom Command (CC) to use with [YAGPDB](https://yagpdb.xyz/).
 1. Use command $add and $remove to add/remove users to/from the ticket. 
 	1. Maximum of 15 users per ticket. 
 		1. **Why not use the built-in add command?** Because that doesn't allow you to reopen the ticket. 
-1. Automatically deletes tickets after x amount of time with no msgs sent. Only applies to open tickets. Closed ones will have to be deleted manually. 
+1. Automatically deletes tickets after x amount of time with no messages sent. Only applies to open tickets. Closed ones will have to be deleted manually. 
 
 ## To Do List
 1. Special mod tickets that can only be used by mods and automatically sets ticket to admin only.
