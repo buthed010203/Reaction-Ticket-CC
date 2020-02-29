@@ -10,7 +10,7 @@ This is a Custom Command (CC) to use with [YAGPDB](https://yagpdb.xyz/).
 		1. SmallList (aliases sl, small): Same as above but more concise. Only show 3 infos, instead of all infos. Also has a pagination system. It shows the 24 most recent tickets, instead of 25.
 		1. Exact ticket (for example: -ct 96): Shows all the info about the specifed ticket. If you are **premium** at [YAGPDB](https://yagpdb.xyz/), this feature will also have a pagination system. 
 		1. Newest (aliases: n, new): Same as above, but instead of exact ticket, shows the most recent one.
-		1. Oldest (aliases: o, old): Same as above, but instead of the most recente ticket, shows the oldest one.
+		1. Oldest (aliases: o, old): Same as above, but instead of the most recent ticket, shows the oldest one.
 		1. Examples of use: -ct o | -ct new | -checktickets fl
 1. Ability to reopen ticket after its closed. 
 1. Ability to save transcripts without deleting the ticket. 
