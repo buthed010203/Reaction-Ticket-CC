@@ -1,6 +1,7 @@
 # Reaction-Ticket-CC
-This is a Custom Command (CC) to use with [YAGPDB](https://yagpdb.xyz/).
-**IMPORTANT NOTE:** If you are using this CC, you **MUST** disable all tickets commands. 
+This is a Custom Command (CC) to use with [YAGPDB](https://yagpdb.xyz/).<p>
+**IMPORTANT NOTE:** If you are using this CC, you **MUST DISABLE** all tickets commands.<p>
+Also, ***never*** change the name of a ticket chat manually. Let the bot make all the changes. 
 
 ## Features
 1. Tickets work fully with reactions. You can open, close, reopen, delete, save transcript, make it admin only, etc, all with reactions. 
