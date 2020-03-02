@@ -38,7 +38,7 @@
 {{end}}
 {{/* END OF CHECKS */}}
 
-{{if (and ($tn) ($isMod) ($master) (eq .Channel.ParentID $category))}}
+{{if (and ($tn) ($isMod) ($master) (eq .Channel.ParentID $category) (ne $master.pos 3))}}
     {{deleteMessage nil (toInt $master.mainMsgID) 2}}
     {{$autor := $master.creator}}
     {{$content := joinStr "" "Welcome, **" $autor.Username "**"}}
