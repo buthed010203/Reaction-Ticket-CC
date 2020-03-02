@@ -20,10 +20,10 @@
 {{/* START */}}
 {{if not (eq (toInt $master.pos) 3)}}
     {{if (eq $alert 1)}}
-        {{$master.Set "duration" (currentTime.Add (toDuration "2h30m"))}}
+        {{$master.Set "duration" (currentTime.Add (toDuration "3h"))}}
         {{dbSet (toInt $tn) "ticket" $master}}
         {{$embed := cembed "description" "This ticket will be closed in 3 hours because of inactivity!" "tile" "WARNING!"}}
-        {{$content := joinStr "" "O ticket " $tn " será fechado em breve!\n\n" mentionEveryone}}
+        {{$content := joinStr "" "The ticket " $tn " will be closed soon!\n\n" mentionEveryone}}
         {{sendMessageNoEscape nil (complexMessage "content" $content "embed" $embed)}}
         {{scheduleUniqueCC (toInt .CCID) nil 9000 $tn (sdict "alert" 2)}}
     {{else if eq $alert 2}}
@@ -31,7 +31,7 @@
         {{$master.Set "alert" 2}}
         {{dbSet (toInt $tn) "ticket" $master}}
         {{$embed := cembed "description" "This ticket will be closed in 30 minutes because of inactivity!" "tile" "WARNING!"}}
-        {{$content := joinStr "" "O ticket " $tn " está prestes a ser fechado!\n\n" mentionEveryone}}
+        {{$content := joinStr "" "The ticket " $tn " is about to be closed!\n\n" mentionEveryone}}
         {{sendMessageNoEscape nil (complexMessage "content" $content "embed" $embed)}}
         {{scheduleUniqueCC (toInt .CCID) nil 1800 $tn (sdict "alert" 3)}}
     {{else if eq $alert 3}}
