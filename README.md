@@ -20,14 +20,22 @@ Also, ***never*** change the name of a ticket chat manually. Let the bot make al
 		1. **Why not use the built-in add command?** Because that doesn't allow you to reopen the ticket. 
 1. Automatically deletes tickets after x amount of time with no messages sent. Only applies to open tickets. Closed ones will have to be deleted manually. 
 
-## To Do List
+## How To Install
+Copy and paste every command to your server. All the instructions are in the top of each command.<p>
+You dont need to change anything in any command, except for the setup command.<p>
+After you created all the commands at your control panel, change the settings in the setup command and then run it once.<p>
+It will return with all your settings. If everything is correct, the system is good to go.<p>
+If you found a mistake in your settings, change it and run the command again.<p>
+After that you can delete the setup command.
+
+### To Do List
 1. Special mod tickets that can only be used by mods and automatically sets ticket to admin only.
 1. Different ticket categories which start with an unique starting name.
 	1. A category wise summary of how many ticket of each category was opened (statistics per say).
 1. User satisfaction system. An ability to make the user say how good was the ticket support from 1 to 10.
 1. Mods statistics. Admins will be able to see mods statistics, for example: how many ticket they solved or there avarage grade on the satisfaction system. 
 
-## Contributing
+### Contributing
 Please feel free to report any bugs. I'll try to fix it ASAP. Also, if you have an idea to add to the system, or how to improve it somehow, please let me know as well!
 
 ### Disclaimer
