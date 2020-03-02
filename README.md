@@ -19,6 +19,7 @@ Also, ***never*** change the name of a ticket chat manually. Let the bot make al
 	1. Maximum of 15 users per ticket. 
 		1. **Why not use the built-in add command?** Because that doesn't allow you to reopen the ticket. 
 1. Automatically deletes tickets after x amount of time with no messages sent. Only applies to open tickets. Closed ones will have to be deleted manually. 
+1. Handy **-resend** command. This deletes the original first message of the ticket and resends it. It's good to close the ticket without having to scroll all the way up to find the message.
 
 ## How To Install
 Copy and paste every command to your server. All the instructions are in the top of each command.<p>
