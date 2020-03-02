@@ -25,21 +25,22 @@
 {{$roe := $setup.ReOpenEmoji}}
 {{$de := $setup.DeleteEmoji}}
 {{$RID := .ReactionMessage.ID}}
-{{if (or (eq .Channel.ParentID $category) (eq $RID $msgID))}}
-{{$tn := reFind `[0-9]+` .Channel.Name}}
-{{$master := sdict (dbGet (toInt $tn) "ticket").Value}}
-{{$creator := (toInt $master.userID)}}{{$ticketCounter := (toInt $master.ticketCounter)}}
 {{$isMod := false}}{{$isAdmin := false}}
 {{$TO := $setup.ticketOpen}}{{$TS := $setup.ticketSolving}}{{$TC := $setup.ticketClose}}
-{{$ab := reFind $TO .Channel.Name}}{{$rs := reFind $TS .Channel.Name}}{{$fc := reFind $TC .Channel.Name}}
 
 {{/* OPENING TICKET */}}
 {{if (and (.ReactionAdded) (eq $RID $msgID) (eq .Reaction.Emoji.Name $oe))}}
     {{exec "ticket open" $TO}}
     {{deleteResponse 10}}
-	{{deleteMessageReaction nil $msgID .User.ID $oe}}
+    {{deleteMessageReaction nil $msgID .User.ID $oe}}
 {{end}}
 {{/* END OF OPENING TICKET */}}
+
+{{if eq .Channel.ParentID $category}}
+{{$tn := reFind `[0-9]+` .Channel.Name}}
+{{$master := sdict (dbGet (toInt $tn) "ticket").Value}}
+{{$creator := (toInt $master.userID)}}{{$ticketCounter := (toInt $master.ticketCounter)}}
+{{$ab := reFind $TO .Channel.Name}}{{$rs := reFind $TS .Channel.Name}}{{$fc := reFind $TC .Channel.Name}}
 
 {{/* CHECKS */}}
 {{range .Member.Roles}}
