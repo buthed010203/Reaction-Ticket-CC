@@ -12,7 +12,7 @@
 {{$ticketOpen := $setup.ticketOpen}}{{$ticketClose := $setup.ticketClose}}{{$ticketSolving := $setup.ticketSolving}}
 {{$est := ""}}{{$d := 0}}{{$msg := ""}}{{$pm := ""}}{{$embed := ""}}{{$timed := ""}}{{$s1 := "" }}{{$s2 := ""}}{{$s3 := ""}}{{$s4 := "" }}{{$s5 := ""}}{{$fields := ""}}{{$t1 := "These are your server tickets:"}}{{$t2 := "Ticket ID: "}}{{$t := ""}}{{$f := "🎟️"}}{{$tn := 0}}{{$pA := ""}}{{$pM := ""}}
 {{$cmd := reFind `(?i)oldest|o|old|newest|n|new|fulllist|fl|full|big|smalllist|sl|small|[0-9]+` .Cmd}}{{$getNumber := reFind `[0-9]+` $cmd}}{{$c := 3066993}}
-{{$ME:= cembed "title" "NO TICKET OPENED" "description" "All ticket already solved" "color" $c}}
+{{$ME:= cembed "title" "NO TICKETS OPENED" "description" "All tickets already solved" "color" $c}}
 
 {{if reFind `(?i)fl|fulllist|full|big` $cmd}}
 {{$tickets := dbTopEntries "ticket" 25 0}}
