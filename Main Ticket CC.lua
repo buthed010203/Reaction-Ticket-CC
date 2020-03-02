@@ -18,7 +18,7 @@
 {{$Delay := (toInt $setup.Delay)}}
 {{$tn := reFind `[0-9]+` .Channel.Name}}
 {{$time :=  currentTime}}
-{{$content := joinStr "" "Welcome, " .User.Mention}}
+{{$content := joinStr "" "Welcome, " .User.Mention "\nNew ticket opened, <@&" $ModeratorRoleID "> !!"}}
 {{$descr := joinStr "" "Soon a  <@&" $ModeratorRoleID "> will talk to you! For now, you can start telling us what's the issue, so that we can help you faster! :)\nIn case you dont need help anymore, or you want to close this ticket, click on the " $CloseEmoji " and then on the " $ConfirmCloseEmoji " that will show up!"}}
 {{$embed := cembed "color" 8190976 "description" $descr "timestamp" $time}}
 {{$id := sendMessageNoEscapeRetID nil (complexMessage "content" $content "embed" $embed)}}
