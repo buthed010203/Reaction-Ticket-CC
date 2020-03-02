@@ -22,7 +22,7 @@ Also, ***never*** change the name of a ticket chat manually. Let the bot make al
 1. Handy **-resend** command. This deletes the original first message of the ticket and resends it. It's good to close the ticket without having to scroll all the way up to find the message.
 
 ## How To Install
-Copy and paste every command to your server. All the instructions are in the top of each command.<p>
+Copy and paste every command to your server. All the instructions are at the top of each command.<p>
 You dont need to change anything in any command, except for the setup command.<p>
 After you created all the commands at your control panel, change the settings in the setup command and then run it once.<p>
 It will return with all your settings. If everything is correct, the system is good to go.<p>
