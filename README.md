@@ -44,4 +44,4 @@ Please feel free to report any bugs. I'll try to fix it ASAP. Also, if you have 
 This repository and myself are not officially affiliated with YAGPDB in any shape or form. The YAGPDB creator and staff are not responsible for any difficulties caused by these custom commands. These commands are not guaranteed to be working. I strive to test all the custom commands here, but due to many reasons sometimes I am unable to.
 
 ### Contact
-You can contact me @ discord. My name there is: Pedro Pessoa#5354
+You can contact me @ discord. My name there is: Pedro Pessoa#0001
