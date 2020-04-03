@@ -78,7 +78,7 @@
         {{addMessageReactions nil $lm $ste $roe $de}}
         {{$master.Set "lastMessageID" (toString $lm)}}
         {{deleteMessageReaction nil $RID .User.ID $cce}}
-        {{exec "ticket removeuser" $creator}}
+        {{if getMember $creator}} {{exec "ticket removeuser" $creator}} {{end}}
         {{deleteResponse 1}}
         {{if ge $ticketCounter 1}}
             {{execCC $CCID nil 5 (sdict "tn" $tn "um" 1)}}
