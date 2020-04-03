@@ -29,7 +29,7 @@ After you created all the commands at your control panel, change the settings in
 It will return with all your settings. If everything is correct, the system is good to go.<p>
 If you found a mistake in your settings, change it and run the command again.<p>
 After that you can delete the setup command.<p>
-NO CHANNELS CAN BE IN THE TICKET CATEGORY BESIDES A TICKET CHANNEL!!!
+NO CHANNELS CAN BE IN THE TICKET CATEGORY BESIDES A TICKET CHANNEL!!! NOT EVEN THE TICKETS LOGS!
 
 ### To Do List
 1. Special mod tickets that can only be used by mods and automatically sets ticket to admin only.
