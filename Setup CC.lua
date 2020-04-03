@@ -16,6 +16,8 @@
 {{$Mods := cslice 674429313097007106}} {{/* IDs of your MODs Roles. Leave the "cslice" here even if you have only 1 role */}}
 {{$MentionRoleID := 647298324734541827}} {{/* Role to be mentioned when a new ticket is opened */}}
 
+{{$msgOpenChannelID := 578976698931085333}} {{/* Channel ID where the msg to open tickets is at. THIS CHANNEL CANT BE IN THE SAME CATEGORY AS THE TICKETS!!!!! */}}
+
 {{$OpenEmoji := "📩"}}
 {{$CloseEmoji := "🔒"}}
 {{$SolveEmoji := "📌"}}
@@ -47,6 +49,7 @@
 {{dbSet 0 "ticket_cfg" (sdict "Admins" $Admins "Mods" $Mods "MentionRoleID" (toString $MentionRoleID) "OpenEmoji" $OpenEmoji "CloseEmoji" $CloseEmoji "SolveEmoji" $SolveEmoji "AdminOnlyEmoji" $AdminOnlyEmoji "ConfirmCloseEmoji" $ConfirmCloseEmoji "CancelCloseEmoji" $CancelCloseEmoji "SaveTranscriptEmoji" $SaveTranscriptEmoji "ReOpenEmoji" $ReOpenEmoji "DeleteEmoji" $DeleteEmoji "ticketOpen" (lower $ticketOpen) "ticketClose" (lower $ticketClose) "ticketSolving" (lower $ticketSolving) "SchedueledCCID" (toString $SchedueledCCID) "CCID" (toString $CCID) "msgID" (toString $msgID) "Trc" (toString $Trc) "category" (toString $category) "Delay" (toString $Delay))}}
 All good! If you did everything right, you should now be good to use your Reaction Ticket System! :)
 {{$setup := sdict (dbGet 0 "ticket_cfg").Value}}
+{{addMessageReactions $msgOpenChannelID $msgID $OpenEmoji}}
 **Admins:** {{$setup.Admins}} 
 **Mods:** {{$setup.Mods}} 
 **RangeCCID:** {{(toInt $setup.CCID)}}
