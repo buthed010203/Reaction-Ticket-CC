@@ -28,7 +28,7 @@ You dont need to change anything in any command, except for the setup command.<p
 After you created all the commands at your control panel, change the settings in the setup command and then run it once.<p>
 It will return with all your settings. If everything is correct, the system is good to go.<p>
 If you found a mistake in your settings, change it and run the command again.<p>
-After that you can delete the setup command.
+After that you can delete the setup command.<p>
 NO CHANNELS CAN BE IN THE TICKET CATEGORY BESIDES A TICKET CHANNEL!!!
 
 ### To Do List
