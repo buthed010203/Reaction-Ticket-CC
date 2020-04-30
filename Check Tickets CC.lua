@@ -75,7 +75,7 @@
     {{else}}{{$d = 1}}
     {{end}}
 {{if eq $d 1}}
-    {{$embed = cembed "title" "Ticket não existente" "description" (joinStr "" "Procurei em todo o servidor, mas parece que o ticket " $getNumber " não existe!") "color" 16711680}} {{sendMessage nil $embed}}
+    {{$embed = cembed "title" "Non existant ticket" "description" (joinStr "" "I searched the whole server, but looks like ticket " $getNumber " does not exist!") "color" 16711680}} {{sendMessage nil $embed}}
 {{else if eq $d 2}}
     {{$embed = cembed "title" $t "fields" $fields "color" $c "footer" (sdict "text" $f)}} {{$out := sendMessageRetID nil $embed}}
     {{if .IsPremium}}{{addMessageReactions nil $out "◀️" "▶️"}}{{end}}
