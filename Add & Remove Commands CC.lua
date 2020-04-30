@@ -40,7 +40,7 @@
 {{if (or (eq .User.ID $creator) ($isModA))}}
     {{if (and (.CmdArgs) (eq (len .CmdArgs) 1))}}
         {{with (userArg (index .CmdArgs 0))}}
-            {{$user = .}}    
+            {{$user = .}}
             {{range (getMember $user.ID).Roles}}
                 {{if in $mods .}}
                     {{$isMod = true}}
@@ -90,7 +90,7 @@
             Invalid user, {{$tUser.Mention}}
         {{end}}
     {{else}}
-        Correct usage of the command: $add @user
+        Correct usage of the command: $add or $remove @user
     {{end}}
 {{end}}
 {{end}}
