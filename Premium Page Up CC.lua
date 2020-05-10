@@ -1,7 +1,7 @@
 {{/*
     This command manages the pagination of certain embeds
 
-    You only need this if your are premium
+    You only need this if you are premium
 
     Dont change anything
 
